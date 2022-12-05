@@ -1,0 +1,255 @@
+@use "sass:math";
+@function toVw($target) {
+  $vw-context: (1920 * 0.01) * 1px;
+  @return math.div($target, $vw-context) * 1vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242b33;
+}
+
+.container{
+
+.housevop{
+    color: #fff;
+    img{
+        position: relative;
+        width: toVw(1920px);
+        height: 100vh;
+    }
+
+    h2{
+        position: absolute;
+        top: toVw(45px);
+        left: toVw(405px);
+        font-weight: 600;
+        font-size: toVw(36px);
+        line-height: toVw(54px);
+    }
+
+    b{
+        position: absolute;
+        top: toVw(95px);
+        left: toVw(405px);
+        font-weight: 400;
+        font-size: toVw(12px);
+        line-height: toVw(14px);
+    }
+}
+
+    ul{
+        display: flex;
+        gap: toVw(45px);
+        position: absolute;
+        top: toVw(70px);
+        left: toVw(945px);
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+        font-size: toVw(14px);
+        font-weight: 400;
+        line-height: toVw(16px);
+    }
+
+    .complex{
+        h1{
+            color: #D4C17F ;
+            text-align: center;
+            position: absolute;
+            top: toVw(296px);
+            left: toVw(700px);
+            font-weight: 700;
+            font-size: toVw(48px);
+            line-height: toVw(64px);
+        }
+    }
+
+    .mouse{
+        img{
+            position: absolute;
+            top: toVw(505px);
+            left: toVw(940px);
+            animation: mouse 3s infinite;
+        }
+    }
+
+    .placeholder{
+     
+       img{
+        position: absolute;
+        left: toVw(653px);
+        bottom: toVw(100px);
+       }
+
+       p{
+        position: absolute;
+        left: toVw(685px);
+        color: #fff;
+        bottom: toVw(100px);
+       }
+
+    }
+
+
+    .phone{
+       
+        img{
+            position: absolute;
+            right: toVw(880px);
+            bottom: toVw(100px);
+        }
+
+        p{
+            position: absolute;
+            right: toVw(730px);
+            bottom: toVw(100px);
+            color: #fff;
+        }
+
+
+    }
+}
+
+.services{
+    background-color: #242b33;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: toVw(120px) 0;
+    width: toVw(794px);
+
+  
+   
+ 
+    .service{
+        display: block;
+      text-align: center;
+     
+       
+      img{
+        width: toVw(80px);
+        height: toVw(80px);
+        
+        
+      }
+
+      h4{
+       color: #fff;
+       margin-top: toVw(25px);
+       font-weight: 300;
+       font-size: toVw(20px);
+       line-height: toVw(27px);
+      }
+
+
+  }   
+}
+
+.aportament{
+    .loft{
+        .zagolovok{
+            h2{
+                color: #D4C17F;
+               position: absolute;
+               left: toVw(405px);
+            }
+        }
+
+        .floor{
+           
+
+           .floor-com1{
+            position: absolute;
+            left: toVw(405px);
+            top: toVw(1435px);
+
+            p{
+                position: absolute;
+            left: toVw(70px);
+            top: toVw(258px);
+            color: #fff;
+            font-weight: 400;
+            font-size: toVw(24px);
+            line-height: toVw(28px);
+            }
+           }
+
+           .floor-com2{
+            position: absolute;
+            left: toVw(970px);
+            top: toVw(1435px);
+
+            p{
+                position: absolute;
+            left: toVw(70px);
+            top: toVw(258px);
+            color: #fff;
+            font-weight: 400;
+            font-size: toVw(24px);
+            line-height: toVw(28px);
+            }
+           }
+
+           .floor-com3{
+            position: absolute;
+            left: toVw(405px);
+            top: toVw(1800px);
+
+            p{
+                position: absolute;
+            left: toVw(70px);
+            top: toVw(258px);
+            color: #fff;
+            font-weight: 400;
+            font-size: toVw(24px);
+            line-height: toVw(28px);
+            }
+           }
+
+           .floor-com4{
+            position: absolute;
+            left: toVw(970px);
+            top: toVw(1800px);
+
+            p{
+                position: absolute;
+            left: toVw(70px);
+            top: toVw(258px);
+            color: #fff;
+            font-weight: 400;
+            font-size: toVw(24px);
+            line-height: toVw(28px);
+            }
+           }
+            
+          
+
+            img{
+                width: toVw(535px);
+                height: toVw(320px);
+               
+            
+               
+                
+            }
+        }
+    }
+}
+
+    
+
+
+
+@keyframes mouse{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-35px); }
+    100% { transform: translateY(0); }
+}
+
