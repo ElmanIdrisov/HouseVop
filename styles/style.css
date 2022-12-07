@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+@-webkit-keyframes mouse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes mouse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +29,12 @@
 
 body {
   background-color: #242b33;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .container .housevop {
@@ -67,7 +96,7 @@ body {
   left: 34.0104166667vw;
   bottom: 5.2083333333vw;
 }
-.container .placeholder p {
+.container .placeholder a {
   position: absolute;
   left: 35.6770833333vw;
   color: #fff;
@@ -78,9 +107,9 @@ body {
   right: 45.8333333333vw;
   bottom: 5.2083333333vw;
 }
-.container .phone p {
+.container .phone a {
   position: absolute;
-  right: 38.0208333333vw;
+  right: 37.2395833333vw;
   bottom: 5.2083333333vw;
   color: #fff;
 }
@@ -129,6 +158,10 @@ body {
   font-size: 1.25vw;
   line-height: 1.4583333333vw;
 }
+.aportament .loft .floor .floor-com1:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+}
 .aportament .loft .floor .floor-com2 {
   position: absolute;
   left: 50.5208333333vw;
@@ -142,6 +175,10 @@ body {
   font-weight: 400;
   font-size: 1.25vw;
   line-height: 1.4583333333vw;
+}
+.aportament .loft .floor .floor-com2:hover {
+  transition: all 1s;
+  transform: scale(1.1);
 }
 .aportament .loft .floor .floor-com3 {
   position: absolute;
@@ -157,6 +194,10 @@ body {
   font-size: 1.25vw;
   line-height: 1.4583333333vw;
 }
+.aportament .loft .floor .floor-com3:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+}
 .aportament .loft .floor .floor-com4 {
   position: absolute;
   left: 50.5208333333vw;
@@ -171,31 +212,102 @@ body {
   font-size: 1.25vw;
   line-height: 1.4583333333vw;
 }
+.aportament .loft .floor .floor-com4:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+}
 .aportament .loft .floor img {
   width: 27.8645833333vw;
   height: 16.6666666667vw;
+  transition: 0.3s;
 }
 
-@-webkit-keyframes mouse {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-35px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.input .text h3 {
+  color: #D4C17F;
+  font-weight: 700;
+  font-size: 1.875vw;
+  line-height: 2.5vw;
+  position: absolute;
+  left: 21.09375vw;
+  top: 122.3958333333vw;
+}
+.input .text p {
+  width: 27.8645833333vw;
+  font-weight: 400;
+  font-size: 0.8333333333vw;
+  line-height: 1.25vw;
+  color: #fff;
+  position: absolute;
+  left: 21.09375vw;
+  top: 126.5625vw;
+}
+.input .ipsum img {
+  position: absolute;
+  top: 111.9791666667vw;
+  height: 29.1666666667vw;
+}
+.input .name {
+  text-align: center;
+  color: #bebebe;
+  border: none;
+}
+.input .top {
+  padding: 0.5208333333vw 4.2708333333vw;
+  width: 13.28125vw;
+  height: 2.6041666667vw;
+  background-color: #fff;
+  opacity: 0.5;
+  border: none;
+  position: absolute;
+  top: 125.5208333333vw;
+  right: 32.5520833333vw;
+}
+.input .top2 {
+  padding: 0.5208333333vw 3.6458333333vw;
+  width: 13.28125vw;
+  height: 2.6041666667vw;
+  background-color: #fff;
+  opacity: 0.5;
+  border: none;
+  position: absolute;
+  left: 68.4895833333vw;
+  top: 125.5208333333vw;
+}
+.input .top3 {
+  padding: 0.5208333333vw 2.6041666667vw;
+  width: 13.28125vw;
+  height: 2.6041666667vw;
+  background-color: #D4C17F;
+  color: #fff;
+  border: none;
+  position: absolute;
+  left: 68.4895833333vw;
+  top: 129.6875vw;
+}
+.input p {
+  font-weight: 400;
+  font-size: 0.6770833333vw;
+  list-style: 0.8333333333vw;
+  position: absolute;
+  left: 53.125vw;
+  top: 130.2083333333vw;
 }
 
-@keyframes mouse {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-35px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.video .video1 {
+  width: 37.4479166667vw;
+  height: 33.8541666667vw;
+  position: absolute;
+  top: 145.8333333333vw;
+  left: 28.6458333333vw;
+}
+.video .vector {
+  width: 5.2083333333vw;
+  height: 5.2083333333vw;
+  position: absolute;
+  top: 160.5208333333vw;
+  left: 44.2708333333vw;
+  transition: 0.3s;
+}
+.video .vector:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */

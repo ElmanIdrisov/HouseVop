@@ -4,6 +4,10 @@
   @return math.div($target, $vw-context) * 1vw;
 }
 
+@import "animation.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +16,12 @@
 
 body{
     background-color: #242b33;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .container{
@@ -80,6 +90,8 @@ body{
     }
 
     .placeholder{
+        
+        
      
        img{
         position: absolute;
@@ -87,7 +99,7 @@ body{
         bottom: toVw(100px);
        }
 
-       p{
+       a{
         position: absolute;
         left: toVw(685px);
         color: #fff;
@@ -98,6 +110,8 @@ body{
 
 
     .phone{
+
+        
        
         img{
             position: absolute;
@@ -105,9 +119,9 @@ body{
             bottom: toVw(100px);
         }
 
-        p{
+        a{
             position: absolute;
-            right: toVw(730px);
+            right: toVw(715px);
             bottom: toVw(100px);
             color: #fff;
         }
@@ -163,9 +177,11 @@ body{
         }
 
         .floor{
+            
            
 
            .floor-com1{
+           
             position: absolute;
             left: toVw(405px);
             top: toVw(1435px);
@@ -178,6 +194,11 @@ body{
             font-weight: 400;
             font-size: toVw(24px);
             line-height: toVw(28px);
+            }
+            &:hover{
+                transition: all 1s ;
+                
+                transform: scale(1.1);
             }
            }
 
@@ -195,6 +216,11 @@ body{
             font-size: toVw(24px);
             line-height: toVw(28px);
             }
+            &:hover{
+                transition: all 1s ;
+                
+                transform: scale(1.1);
+            }
            }
 
            .floor-com3{
@@ -210,6 +236,11 @@ body{
             font-weight: 400;
             font-size: toVw(24px);
             line-height: toVw(28px);
+            }
+            &:hover{
+                transition: all 1s ;
+                
+                transform: scale(1.1);
             }
            }
 
@@ -227,29 +258,131 @@ body{
             font-size: toVw(24px);
             line-height: toVw(28px);
             }
+            &:hover{
+                transition: all 1s ;
+                
+                transform: scale(1.1);
+            }
            }
             
-          
-
             img{
-                width: toVw(535px);
-                height: toVw(320px);
-               
+           
             
-               
-                
-            }
+            width: toVw(535px);
+            height: toVw(320px);
+            transition: .3s;
+           }
         }
     }
 }
 
+.input{
+
     
 
+    .text{
+        
+        h3{
+            color: #D4C17F; 
+            font-weight: 700;
+            font-size: toVw(36px);
+            line-height: toVw(48px);
+            position: absolute;
+            left: toVw(405px);
+            top: toVw(2350px);
+        }
+        p{
+            width: toVw(535px);
+            font-weight: 400;
+            font-size: toVw(16px);
+            line-height: toVw(24px);
+            color: #fff;
+            position:absolute;
+            left: toVw(405px);
+            top: toVw(2430px);
+        }
+    }
+    
+    .ipsum{
+
+        img{
+            position: absolute;
+            top: toVw(2150px);
+            height: toVw(560px);
+        }
+    }
+    .name{
+        text-align: center;
+        color: #bebebe;
+        border: none;
+    }
+    .top{
+        padding: toVw(10px) toVw(82px);
+        width: toVw(255px);
+        height: toVw(50px);
+        background-color: #fff;
+        opacity: (0.5);
+        border: none;
+        position: absolute;
+        top: toVw(2410px);
+        right: toVw(625px);
+    }
+    .top2{
+        padding: toVw(10px) toVw(70px);
+        width: toVw(255px);
+        height: toVw(50px);
+        background-color: #fff;
+        opacity: (0.5);
+        border: none;
+       position: absolute;
+        left: toVw(1315px);
+        top: toVw(2410px);
+    }
+    .top3{
+        padding: toVw(10px) toVw(50px);
+        width: toVw(255px);
+        height: toVw(50px);
+        background-color: #D4C17F;
+        color: #fff;
+        border: none;
+        position: absolute;
+        left: toVw(1315px);
+        top: toVw(2490px);
+    }
+
+    p{
+        font-weight: 400;
+        font-size: toVw(13px);
+        list-style: toVw(16px);
+        position: absolute;
+        left: toVw(1020px);
+        top: toVw(2500px);
+    }
+    
+}
+
+.video{
+    .video1{
+        
+            width: toVw(719px);
+            height: toVw(650px);
+            position: absolute;
+            top: toVw(2800px);
+            left: toVw(550px);
+    }
+
+    .vector{
+        width: toVw(100px);
+        height: toVw(100px);
+        position: absolute;
+        top: toVw(3082px);
+        left: toVw(850px);
+        transition: .3s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
 
 
-@keyframes mouse{
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-35px); }
-    100% { transform: translateY(0); }
 }
 
