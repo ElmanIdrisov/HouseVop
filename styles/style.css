@@ -310,4 +310,59 @@ a {
 }
 .video .vector:hover {
   transform: scale(1.2);
+}
+
+.input2 .question h3 {
+  color: #D4C17F;
+  font-size: 1.875vw;
+  font-weight: 700;
+  line-height: 2.5vw;
+  width: 15.2083333333vw;
+  position: absolute;
+  top: 190.1041666667vw;
+  left: 21.09375vw;
+}
+.input2 .question p {
+  width: 13.28125vw;
+  font-weight: 400;
+  font-size: 0.6770833333vw;
+  line-height: 0.8333333333vw;
+  position: absolute;
+  left: 21.09375vw;
+  top: 195.3125vw;
+  color: #fff;
+  text-align: center;
+}
+.input2 .vopros .main1 {
+  padding: 0.5208333333vw 4.2708333333vw;
+  width: 13.28125vw;
+  height: 2.6041666667vw;
+  background-color: #fff;
+  opacity: 0.5;
+  border: none;
+  position: absolute;
+  top: 194.4270833333vw;
+  right: 46.875vw;
+}
+.input2 .vopros .main2 {
+  padding: 0.5208333333vw 3.6458333333vw;
+  width: 13.28125vw;
+  height: 2.6041666667vw;
+  background-color: #fff;
+  opacity: 0.5;
+  border: none;
+  position: absolute;
+  left: 53.90625vw;
+  top: 194.4270833333vw;
+}
+.input2 .vopros .main3 {
+  padding: 0.5208333333vw 2.6041666667vw;
+  width: 13.28125vw;
+  height: 2.6041666667vw;
+  background-color: #D4C17F;
+  color: #fff;
+  border: none;
+  position: absolute;
+  left: 69.0104166667vw;
+  top: 194.4270833333vw;
 }/*# sourceMappingURL=style.css.map */

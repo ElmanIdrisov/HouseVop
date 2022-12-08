@@ -386,3 +386,66 @@ a{
 
 }
 
+.input2{
+    .question{
+        h3{
+            color:#D4C17F; 
+            font-size: toVw(36px);
+            font-weight: 700;
+            line-height: toVw(48px);
+            width: toVw(292px);
+            position: absolute;
+            top: toVw(3650px);
+            left: toVw(405px);
+        }
+
+        p{
+            width: toVw(255px);
+            font-weight: 400;
+            font-size: toVw(13px);
+            line-height: toVw(16px);
+            position: absolute;
+            left: toVw(405px);
+            top: toVw(3750px);
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .vopros{
+        .main1{
+            padding: toVw(10px) toVw(82px);
+            width: toVw(255px);
+            height: toVw(50px);
+            background-color: #fff;
+            opacity: (0.5);
+            border: none;
+            position: absolute;
+            top: toVw(3733px);
+            right: toVw(900px);
+        }
+        .main2{
+            padding: toVw(10px) toVw(70px);
+            width: toVw(255px);
+            height: toVw(50px);
+            background-color: #fff;
+            opacity: (0.5);
+            border: none;
+            position: absolute;
+            left: toVw(1035px);
+            top: toVw(3733px);
+        }
+        .main3{
+            padding: toVw(10px) toVw(50px);
+            width: toVw(255px);
+            height: toVw(50px);
+            background-color: #D4C17F;
+            color: #fff;
+            border: none;
+            position: absolute;
+            left: toVw(1325px);
+            top: toVw(3733px);
+        }
+    }
+}
+
